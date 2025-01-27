@@ -120,9 +120,9 @@ else{
 //}
 
 // print the first 100 numbers
-//for(let i=0;i<101; i+1){
-//   console.log("i")
-//}
+for(let i=0;i<101; i+1){
+  console.log(i)
+}
    
 
 //while loop
