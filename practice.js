@@ -1,0 +1,17 @@
+//returning functions
+function multiplication(numberone, numbertwo){
+    return numberone * numbertwo
+}
+console.log(multiplication(10,34));
+
+// void function
+function multi(number1, number2){
+    let multiplication  = number1 * number2
+    console.log(multiplication);
+}
+multi(123,234)
+
+const welcome = (username)=>{
+    console.log(`welcome back,${username}`);
+}
+welcome("kenneth")
