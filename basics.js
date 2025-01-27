@@ -46,3 +46,102 @@ console.log(numberSix == numberSeven);
 console.log(numberSix === numberSeven);
 
 
+/**
+ * IF STATEMENTS
+ */
+// Syntax
+// if(condition){
+//   logic
+//}else if(condition){
+//    logic
+//}else{
+//  logic
+//}
+
+//age.xhid,adult, invalid
+let age = 0;
+if(age < 0){
+   console.log('invalid')
+}else if(age >= 18){
+   console.log('adult')
+}else{
+   console.log('child')
+}
+
+// switch(key){
+// case value;
+// break;
+// default;
+//}
+
+let number = 5
+switch(number){
+   case 1:
+      console.log("This is Sunday");
+      break;
+   case 2:
+      console.log("This is Monday")
+      break;
+   case 3:
+      console.log("This is a Tuesday")
+      break;
+   case 4:
+      console.log("This is a Wednesday")
+      break;
+   case 5:
+      console.log("This is a Thursday")
+      break;
+   case 6:
+      console.log("This is a Friday")
+      break;
+   case 7:
+      console.log("This is a Saturday")
+      break;
+   default:
+      console.log("This day does not exist")
+      break;
+}
+
+let password = "2544";
+let confirmPassword ="2544";
+if(password === confirmPassword ){
+   console.log("Password invalid")
+}
+else{
+   console.log("Passwords aren't the same\n Try again")
+}
+
+/**
+ * Lopps
+ */
+// for loops
+//for(intialization,condition,increment){
+//  results
+//}
+
+// print the first 100 numbers
+//for(let i=0;i<101; i+1){
+//   console.log("i")
+//}
+   
+
+//while loop
+//intialization
+//while(condition){
+//   results
+//   increment
+//}
+//let i = 0;
+//while(i<100){
+///  console.log(i)
+///   i+=1;
+///}
+//for in loop //Arrays
+let fruitlist =["mangoes","apples","oranges"];
+for(fruit in fruitlist){
+   console.log(fruitlist[fruit]);
+}
+// for of loop
+for(fruit of fruitlist){
+   console.log(fruit);
+}
