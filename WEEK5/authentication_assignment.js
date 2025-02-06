@@ -64,9 +64,9 @@ function login() {
     return;
   }
 
-  const password = readline.question("Enter your password: ", { hideEchoBack: true });
+  const userPassword = readline.question("Enter your password: ", { hideEchoBack: true });
 
-  if (bcrypt.compareSync(password, userDatabase[username])) {
+  if (bcrypt.compareSync(userPassword, userDatabase[username])) {
     console.log("Login successful!");
     userMenu(username);
   } else {
@@ -75,15 +75,15 @@ function login() {
 }
 
 // User menu after login
-function userMenu(username) {
-  console.log(`\nWelcome, ${username}!`);
+function userMenu(userName) {
+  console.log(`\nWelcome, ${userName}!`);
   while (true) {
     console.log("\n1. View Profile");
     console.log("2. Logout");
     const option = readline.question("Choose an option: ");
 
     if (option === "1") {
-      console.log(`\nUsername: ${username}`);
+      console.log(`\nUsername: ${userName}`);
     } else if (option === "2") {
       console.log("Logging out...\n");
       return;
