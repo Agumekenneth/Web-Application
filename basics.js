@@ -42,8 +42,8 @@ console.log(numberOne / numberTwo);
 let numberSix = 2;
 let numberSeven ='2';
 
-console.log(numberSix == numberSeven);
-console.log(numberSix === numberSeven);
+console.log(numberSix == numberSeven);//loose equality
+console.log(numberSix === numberSeven); //strict equality
 
 
 /**
